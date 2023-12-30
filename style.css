@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+.container {
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+} 
+
+.gameBoard {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #53b463;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  border: 2px groove #000;
+
+  
+}
+
+.gameBoard .food {
+  background: #FF003D;
+}
+.gameBoard .snake {
+  background: #60CBFF;
+}
+
+
